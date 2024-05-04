@@ -9,7 +9,7 @@ public class databaseManager {
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/tictactoe";
         String username = "root";
-        String password = "root";
+        String password = "";
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
 
