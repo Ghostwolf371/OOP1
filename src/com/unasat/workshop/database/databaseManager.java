@@ -7,7 +7,7 @@ import java.sql.Statement;
 
 public class databaseManager {
     public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/tictactoe";
+        String url = "jdbc:mysql://localhost:3306/oop1";
         String username = "root";
         String password = "";
         try{
@@ -20,7 +20,7 @@ public class databaseManager {
             ResultSet resultSet = statement.executeQuery("select * from student");
 
             while (resultSet.next()){
-                System.out.println(resultSet.getInt(1) + resultSet.getString(2) + resultSet.getInt(3));
+                System.out.println(resultSet.getInt(1) +" : "+ resultSet.getString(2)+" : " + resultSet.getString(3));
             }
             connection.close();
         }
